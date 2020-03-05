@@ -179,7 +179,7 @@ Partial Class AdmVisorRepFrm
         Me.tsMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.cmbVerRep, Me.cmbRefrescar, Me.ToolStripSeparator2, Me.cmbProgramarRep, Me.ToolStripSeparator1, Me.cmbSalir})
         Me.tsMenu.Location = New System.Drawing.Point(0, 0)
         Me.tsMenu.Name = "tsMenu"
-        Me.tsMenu.Size = New System.Drawing.Size(672, 52)
+        Me.tsMenu.Size = New System.Drawing.Size(672, 54)
         Me.tsMenu.TabIndex = 1
         Me.tsMenu.Text = "ToolStrip1"
         '
@@ -189,7 +189,7 @@ Partial Class AdmVisorRepFrm
         Me.cmbVerRep.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.cmbVerRep.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.cmbVerRep.Name = "cmbVerRep"
-        Me.cmbVerRep.Size = New System.Drawing.Size(92, 49)
+        Me.cmbVerRep.Size = New System.Drawing.Size(96, 51)
         Me.cmbVerRep.Text = "Generar Reporte"
         Me.cmbVerRep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -199,14 +199,14 @@ Partial Class AdmVisorRepFrm
         Me.cmbRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.cmbRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.cmbRefrescar.Name = "cmbRefrescar"
-        Me.cmbRefrescar.Size = New System.Drawing.Size(58, 49)
+        Me.cmbRefrescar.Size = New System.Drawing.Size(59, 51)
         Me.cmbRefrescar.Text = "Refrescar"
         Me.cmbRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 52)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 54)
         Me.ToolStripSeparator2.Visible = False
         '
         'cmbProgramarRep
@@ -216,7 +216,7 @@ Partial Class AdmVisorRepFrm
         Me.cmbProgramarRep.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.cmbProgramarRep.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.cmbProgramarRep.Name = "cmbProgramarRep"
-        Me.cmbProgramarRep.Size = New System.Drawing.Size(113, 49)
+        Me.cmbProgramarRep.Size = New System.Drawing.Size(120, 51)
         Me.cmbProgramarRep.Text = "Calendarizar Reporte"
         Me.cmbProgramarRep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.cmbProgramarRep.Visible = False
@@ -224,7 +224,7 @@ Partial Class AdmVisorRepFrm
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 52)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 54)
         '
         'cmbSalir
         '
@@ -232,7 +232,7 @@ Partial Class AdmVisorRepFrm
         Me.cmbSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.cmbSalir.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.cmbSalir.Name = "cmbSalir"
-        Me.cmbSalir.Size = New System.Drawing.Size(36, 49)
+        Me.cmbSalir.Size = New System.Drawing.Size(36, 51)
         Me.cmbSalir.Text = "Salir"
         Me.cmbSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '

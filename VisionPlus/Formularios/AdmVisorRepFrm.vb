@@ -91,6 +91,10 @@ Public Class AdmVisorRepFrm
         CargarReportesxPerfil()
     End Sub
 
+    Private Sub gcReportes_Click(sender As Object, e As EventArgs) Handles gcReportes.Click
+
+    End Sub
+
     Private Sub cbxUsuarios_EditValueChanged(sender As Object, e As EventArgs) Handles cbxUsuarios.EditValueChanged
         perfil = cbxUsuarios.EditValue.ToString()
         CargarReportesxPerfil()
@@ -180,7 +184,7 @@ Public Class AdmVisorRepFrm
         ElseIf ReporteID = "375" Then
             Dim frm As New frmParmTM(prop, emp)
             frm.Show() 'Reporte de facturacion interna Taller Mecanico.
-        ElseIf ReporteID = "376" Then
+        ElseIf ReporteID = "376" Or ReporteID = "380" Then
             Dim frm As New frmPrmRangoFechas(prop, emp, Now(), Now())
             frm.Show() 'Reporte de facturacion Avantis - Protena  CAHSA.
 
