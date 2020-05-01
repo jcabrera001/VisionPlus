@@ -121,7 +121,7 @@ Partial Class frmParmDistrito
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(349, 137)
+        Me.ClientSize = New System.Drawing.Size(349, 141)
         Me.Controls.Add(Me.cbxDistrito)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.cbxCalendario)

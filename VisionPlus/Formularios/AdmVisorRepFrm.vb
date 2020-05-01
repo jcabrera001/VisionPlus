@@ -24,7 +24,9 @@ Public Class AdmVisorRepFrm
     Public idgrupo, idarea, cidReporte As Integer
     Dim adp As SqlClient.SqlDataAdapter
     Dim dt As New DataTable
-    Dim cnx As New SqlConnection("Persist Security Info=False;User ID=rptuser;Password=MiTo1380;Initial Catalog=ProteanERP;Server=AMIGODB\AMIGODB")
+    Private ReadOnly cnxProtean As New SqlConnection("Persist Security Info=False;User ID=rptuser;Password=MiTo1380;Initial Catalog=ProteanERP;Server=AMIGODB\AMIGODB")
+    Private ReadOnly cnxNomina As New SqlConnection("Persist Security Info=False;User ID=rptuser;Password=MiTo1380;Initial Catalog=Nomina;Server=AMIGODB\AMIGODB")
+
 
     'Public Sub FuncionInicial(perfilUsuario As String, carpeta As String, pc As String, cuenta As String, id As Int32)
     Public Sub FuncionInicial(dtUsuarios As DataTable, carpeta As String, pc As String, pw As String, emp As String, sit As String)
@@ -89,10 +91,6 @@ Public Class AdmVisorRepFrm
 
     Private Sub cmbRefrescar_Click(sender As Object, e As EventArgs) Handles cmbRefrescar.Click
         CargarReportesxPerfil()
-    End Sub
-
-    Private Sub gcReportes_Click(sender As Object, e As EventArgs) Handles gcReportes.Click
-
     End Sub
 
     Private Sub cbxUsuarios_EditValueChanged(sender As Object, e As EventArgs) Handles cbxUsuarios.EditValueChanged
@@ -187,6 +185,13 @@ Public Class AdmVisorRepFrm
         ElseIf ReporteID = "376" Or ReporteID = "380" Then
             Dim frm As New frmPrmRangoFechas(prop, emp, Now(), Now())
             frm.Show() 'Reporte de facturacion Avantis - Protena  CAHSA.
+        ElseIf ReporteID = "395" Then
+            Dim frm As New frmParmBonsucro(prop)
+            frm.Show() 'Reporte de promedio de horas para Bonsucro.
+        ElseIf ReporteID = "378" Or ReporteID = "394" Then
+            Dim frm As New frmHorasEmpleado(prop)
+            frm.Show() 'Reporte de horas trabajadas agrupadas por departamento, Bonsucro
+
 
             'ElseIf dgvReportes.GetRowCellValue(dgvReportes.FocusedRowHandle, "Reporte").ToString() = "PRESUPUESTOS\Reporte Comparativo Real vs Presupuesto filtrado por SubCta" Then
             '    MsgBox(ReporteID)

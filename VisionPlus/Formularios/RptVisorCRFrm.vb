@@ -134,7 +134,7 @@ Public Class RptVisorCRFrm
             'End If
 
 
-            CrystalReportViewer1.ShowGroupTreeButton = False
+            'CrystalReportViewer1.ShowGroupTreeButton = False
             CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
             CrystalReportViewer1.ShowRefreshButton = False
             cmdActualizar.Visible = True

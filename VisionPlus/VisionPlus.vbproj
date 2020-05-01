@@ -36,7 +36,7 @@
     <UpdateUrl>\\10.1.1.2\Developer\VisionPlus\SetupVisionPlus\</UpdateUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>59</ApplicationRevision>
+    <ApplicationRevision>61</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -173,6 +173,18 @@
       <DependentUpon>AdmVisorRepFrm.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\AdmVisorRepFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Bonsucro\frmHorasEmpleado.Designer.vb">
+      <DependentUpon>frmHorasEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Bonsucro\frmHorasEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Bonsucro\frmParmBonsucro.Designer.vb">
+      <DependentUpon>frmParmBonsucro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Bonsucro\frmParmBonsucro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Configuraciones\frmAddReporteXUsuario.Designer.vb">
@@ -360,6 +372,11 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="PrintRibbonControllerResources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -384,6 +401,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AdmVisorRepFrm.resx">
       <DependentUpon>AdmVisorRepFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Bonsucro\frmHorasEmpleado.resx">
+      <DependentUpon>frmHorasEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Bonsucro\frmParmBonsucro.resx">
+      <DependentUpon>frmParmBonsucro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Configuraciones\frmAddReporteXUsuario.resx">
       <DependentUpon>frmAddReporteXUsuario.vb</DependentUpon>
@@ -472,15 +495,10 @@
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="PrintRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>

@@ -6,6 +6,7 @@ Public Class frmParmDistrito
 
     Dim parametros As New PropReportes
     Dim zaf, cue, dis, cal As Integer
+
     Public Sub New()
 
         ' This call is required by the designer.

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VisionPlus", "VisionPlus\VisionPlus.vbproj", "{E8668E9F-EB9D-4783-952E-5CE057FA630D}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LibVisionPlus001", "LibVisionPlus001\LibVisionPlus001.vbproj", "{2745202F-A5E5-4070-9B9B-E11DFEDF9D65}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupVisonPlus", "SetupVisonPlus\SetupVisonPlus.vdproj", "{FCD92F0E-E8CD-492D-9001-1B50FBE697C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,13 @@ Global
 		{2745202F-A5E5-4070-9B9B-E11DFEDF9D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2745202F-A5E5-4070-9B9B-E11DFEDF9D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2745202F-A5E5-4070-9B9B-E11DFEDF9D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD92F0E-E8CD-492D-9001-1B50FBE697C3}.Debug|Any CPU.ActiveCfg = Debug
+		{FCD92F0E-E8CD-492D-9001-1B50FBE697C3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD24BE50-DDD3-4AFA-AF58-F834289AD896}
 	EndGlobalSection
 EndGlobal
