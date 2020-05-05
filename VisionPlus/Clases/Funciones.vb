@@ -300,18 +300,35 @@ Public Class Funciones
     End Sub
 
     Public Sub SetGridLookUpEdit(cmb As LookUpEdit, dt As DataTable, valueMember As String, Display As String, hide As String)
+        Dim column As String = ""
         cmb.Properties.DataSource = dt
         cmb.Properties.ValueMember = valueMember
         cmb.Properties.DisplayMember = Display
         cmb.Properties.PopulateColumns()
-        cmb.Properties.Columns(hide).Visible = False
+
+
+        For i As Integer = 0 To hide.Length - 1
+            If hide.Chars(i) <> "," Then
+                column = column + hide.Chars(i)
+            Else
+                cmb.Properties.Columns(column).Visible = False
+                column = ""
+            End If
+
+            If i = hide.Length - 1 Then
+
+                cmb.Properties.Columns(column).Visible = False
+            End If
+
+        Next
+
     End Sub
     Public Sub SetGridLookUpEdit(cmb As GridLookUpEdit, dt As DataTable, valueMember As String, Display As String, hide As String)
         cmb.Properties.View.OptionsView.ShowAutoFilterRow = True
         cmb.Properties.DataSource = dt
         cmb.Properties.ValueMember = valueMember
         cmb.Properties.DisplayMember = Display
-        cmb.Properties.View.Columns(hide).Visible = False
+
 
     End Sub
     Public Sub SetGridLookUpEdit(cmb As GridLookUpEdit, dt As DataTable, valueMember As String, Display As String)

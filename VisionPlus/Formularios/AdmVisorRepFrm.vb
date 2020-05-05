@@ -191,7 +191,12 @@ Public Class AdmVisorRepFrm
         ElseIf ReporteID = "378" Or ReporteID = "394" Then
             Dim frm As New frmHorasEmpleado(prop)
             frm.Show() 'Reporte de horas trabajadas agrupadas por departamento, Bonsucro
-
+        ElseIf ReporteID = "387" Then
+            Dim frm As New frmParmAgrupacionSubCuentas(prop)
+            frm.Show() 'Reporte de Agrupacion de SubCuentas
+        ElseIf ReporteID = "381" Or ReporteID = "382" Or ReporteID = "383" Or ReporteID = "384" Or ReporteID = "385" Or ReporteID = "386" Or ReporteID = "396" Or ReporteID = "397" Or ReporteID = "398" Then
+            Dim frm As New frmParmreportesGerencia(prop)
+            frm.Show() 'Reporte de Gerencia Administrativa
 
             'ElseIf dgvReportes.GetRowCellValue(dgvReportes.FocusedRowHandle, "Reporte").ToString() = "PRESUPUESTOS\Reporte Comparativo Real vs Presupuesto filtrado por SubCta" Then
             '    MsgBox(ReporteID)

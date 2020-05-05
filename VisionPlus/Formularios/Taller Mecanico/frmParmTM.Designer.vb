@@ -27,29 +27,37 @@ Partial Class frmParmTM
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.cbxEntidad = New DevExpress.XtraEditors.GridLookUpEdit()
+        Me.cmbEntidad = New DevExpress.XtraEditors.GridLookUpEdit()
         Me.GridLookUpEdit1View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.cbxEstado = New DevExpress.XtraEditors.GridLookUpEdit()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Entidad = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Nombre = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.cmbEstado = New DevExpress.XtraEditors.GridLookUpEdit()
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.Codigo = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cmbCentro = New DevExpress.XtraEditors.GridLookUpEdit()
+        Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
         CType(Me.dtpHasta.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpHasta.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpDesde.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtpDesde.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cbxEntidad.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbEntidad.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cbxEstado.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbEstado.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbCentro.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 68)
+        Me.Label3.Location = New System.Drawing.Point(12, 91)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 36
@@ -78,7 +86,7 @@ Partial Class frmParmTM
         'cmdCancelar
         '
         Me.cmdCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cmdCancelar.Location = New System.Drawing.Point(168, 113)
+        Me.cmdCancelar.Location = New System.Drawing.Point(168, 136)
         Me.cmdCancelar.Name = "cmdCancelar"
         Me.cmdCancelar.Size = New System.Drawing.Size(106, 30)
         Me.cmdCancelar.TabIndex = 33
@@ -87,7 +95,7 @@ Partial Class frmParmTM
         'cmdAceptar
         '
         Me.cmdAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cmdAceptar.Location = New System.Drawing.Point(57, 113)
+        Me.cmdAceptar.Location = New System.Drawing.Point(57, 136)
         Me.cmdAceptar.Name = "cmdAceptar"
         Me.cmdAceptar.Size = New System.Drawing.Size(106, 30)
         Me.cmdAceptar.TabIndex = 32
@@ -114,20 +122,20 @@ Partial Class frmParmTM
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 94)
+        Me.Label4.Location = New System.Drawing.Point(9, 117)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 38
         Me.Label4.Text = "Entidad:"
         '
-        'cbxEntidad
+        'cmbEntidad
         '
-        Me.cbxEntidad.Location = New System.Drawing.Point(57, 90)
-        Me.cbxEntidad.Name = "cbxEntidad"
-        Me.cbxEntidad.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cbxEntidad.Properties.View = Me.GridLookUpEdit1View
-        Me.cbxEntidad.Size = New System.Drawing.Size(217, 20)
-        Me.cbxEntidad.TabIndex = 39
+        Me.cmbEntidad.Location = New System.Drawing.Point(57, 113)
+        Me.cmbEntidad.Name = "cmbEntidad"
+        Me.cmbEntidad.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.cmbEntidad.Properties.PopupView = Me.GridLookUpEdit1View
+        Me.cmbEntidad.Size = New System.Drawing.Size(217, 20)
+        Me.cmbEntidad.TabIndex = 39
         '
         'GridLookUpEdit1View
         '
@@ -137,24 +145,6 @@ Partial Class frmParmTM
         Me.GridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = False
         Me.GridLookUpEdit1View.OptionsView.ShowAutoFilterRow = True
         Me.GridLookUpEdit1View.OptionsView.ShowGroupPanel = False
-        '
-        'cbxEstado
-        '
-        Me.cbxEstado.Location = New System.Drawing.Point(57, 64)
-        Me.cbxEstado.Name = "cbxEstado"
-        Me.cbxEstado.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cbxEstado.Properties.View = Me.GridView1
-        Me.cbxEstado.Size = New System.Drawing.Size(217, 20)
-        Me.cbxEstado.TabIndex = 37
-        '
-        'GridView1
-        '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.Codigo, Me.GridColumn2})
-        Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView1.OptionsView.ShowAutoFilterRow = True
-        Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'GridColumn1
         '
@@ -180,6 +170,24 @@ Partial Class frmParmTM
         Me.Nombre.Visible = True
         Me.Nombre.VisibleIndex = 0
         '
+        'cmbEstado
+        '
+        Me.cmbEstado.Location = New System.Drawing.Point(57, 87)
+        Me.cmbEstado.Name = "cmbEstado"
+        Me.cmbEstado.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.cmbEstado.Properties.PopupView = Me.GridView1
+        Me.cmbEstado.Size = New System.Drawing.Size(217, 20)
+        Me.cmbEstado.TabIndex = 37
+        '
+        'GridView1
+        '
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.Codigo, Me.GridColumn2})
+        Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView1.OptionsView.ShowAutoFilterRow = True
+        Me.GridView1.OptionsView.ShowGroupPanel = False
+        '
         'Codigo
         '
         Me.Codigo.Caption = "Codigo"
@@ -195,11 +203,64 @@ Partial Class frmParmTM
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 0
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(12, 67)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(44, 13)
+        Me.Label5.TabIndex = 40
+        Me.Label5.Text = "Centro:"
+        '
+        'cmbCentro
+        '
+        Me.cmbCentro.Location = New System.Drawing.Point(57, 63)
+        Me.cmbCentro.Name = "cmbCentro"
+        Me.cmbCentro.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.cmbCentro.Properties.PopupView = Me.GridView2
+        Me.cmbCentro.Size = New System.Drawing.Size(217, 20)
+        Me.cmbCentro.TabIndex = 41
+        '
+        'GridView2
+        '
+        Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn3, Me.GridColumn5, Me.GridColumn4})
+        Me.GridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.GridView2.Name = "GridView2"
+        Me.GridView2.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView2.OptionsView.ShowAutoFilterRow = True
+        Me.GridView2.OptionsView.ShowGroupPanel = False
+        '
+        'GridColumn3
+        '
+        Me.GridColumn3.Caption = "ID"
+        Me.GridColumn3.FieldName = "ID"
+        Me.GridColumn3.Name = "GridColumn3"
+        '
+        'GridColumn4
+        '
+        Me.GridColumn4.Caption = "Nombre"
+        Me.GridColumn4.FieldName = "Valor"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 0
+        '
+        'GridColumn5
+        '
+        Me.GridColumn5.Caption = "CentroCosto"
+        Me.GridColumn5.FieldName = "CentroCosto"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 1
+        '
         'frmParmTM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(286, 148)
+        Me.ClientSize = New System.Drawing.Size(286, 171)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.cmbCentro)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dtpHasta)
@@ -208,23 +269,25 @@ Partial Class frmParmTM
         Me.Controls.Add(Me.cmdAceptar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cbxEntidad)
-        Me.Controls.Add(Me.cbxEstado)
+        Me.Controls.Add(Me.cmbEntidad)
+        Me.Controls.Add(Me.cmbEstado)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = false
-        Me.MinimizeBox = false
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmParmTM"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Parámetros"
-        CType(Me.dtpHasta.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.dtpHasta.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.dtpDesde.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.dtpDesde.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.cbxEntidad.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridLookUpEdit1View,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.cbxEstado.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridView1,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        CType(Me.dtpHasta.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpHasta.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpDesde.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtpDesde.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbEntidad.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbEstado.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbCentro.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
         Me.PerformLayout
 
 End Sub
@@ -236,13 +299,19 @@ End Sub
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents cbxEntidad As DevExpress.XtraEditors.GridLookUpEdit
+    Friend WithEvents cmbEntidad As DevExpress.XtraEditors.GridLookUpEdit
     Friend WithEvents GridLookUpEdit1View As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents Entidad As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents Nombre As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents cbxEstado As DevExpress.XtraEditors.GridLookUpEdit
+    Friend WithEvents cmbEstado As DevExpress.XtraEditors.GridLookUpEdit
     Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents Codigo As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents Label5 As Label
+    Friend WithEvents cmbCentro As DevExpress.XtraEditors.GridLookUpEdit
+    Friend WithEvents GridView2 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

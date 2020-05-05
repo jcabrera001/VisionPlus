@@ -229,6 +229,18 @@
     <Compile Include="Formularios\frmPrmRangoFechas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Gerencia Administrativa\frmParmAgrupacionSubCuentas.Designer.vb">
+      <DependentUpon>frmParmAgrupacionSubCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gerencia Administrativa\frmParmAgrupacionSubCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gerencia Administrativa\frmParmReportesGerencia.Designer.vb">
+      <DependentUpon>frmParmReportesGerencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gerencia Administrativa\frmParmReportesGerencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Reportes Presupuesto\frmBitacoraPresupuesto.Designer.vb">
       <DependentUpon>frmBitacoraPresupuesto.vb</DependentUpon>
     </Compile>
@@ -440,6 +452,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AdmProgramarReporteFrm.resx">
       <DependentUpon>AdmProgramarReporteFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gerencia Administrativa\frmParmAgrupacionSubCuentas.resx">
+      <DependentUpon>frmParmAgrupacionSubCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gerencia Administrativa\frmParmReportesGerencia.resx">
+      <DependentUpon>frmParmReportesGerencia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes Presupuesto\frmBitacoraPresupuesto.resx">
       <DependentUpon>frmBitacoraPresupuesto.vb</DependentUpon>
